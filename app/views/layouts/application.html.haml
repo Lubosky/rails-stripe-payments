@@ -1,0 +1,18 @@
+!!! 5
+/[if lt IE 7] <html lang="en" class="no-js ie6">
+/[if IE 7 ]    <html lang="en" class="no-js ie7">
+/[if IE 8 ]    <html lang="en" class="no-js ie8">
+/[if IE 9 ]    <html lang="en" class="no-js ie9">
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+%head
+	%meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+	/ Mobile viewport optimized
+	%meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
+	= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+	= javascript_include_tag "application", "data-turbolinks-track" => true
+	= csrf_meta_tags
+%body
+	.container
+		= yield
+
+= debug(params) if Rails.env.development?
