@@ -1,6 +1,20 @@
-%article.col-sm-12
-	%h1#article-title
-		This is your purchase</p>
-	%p 
-		Your purchase is 
-		= @purchase.inspect
+%section#content-receipt.clearfix
+	#receipt-container
+		.dotmatrix.left
+		#receipt-content
+			%h4#receipt-title Thank You!
+			%p
+				%strong RECEIPT
+			#receipt-details.row.clearfix
+				.col-sm-8.receipt-left
+					%p
+						%strong.font-weight-heavy Growth Hacking
+						%br/
+						%span.font-weight-light Crash Course
+				.col-sm-4
+					$4.99
+			= link_to 'DOWNLOAD', 'https://s3.amazonaws.com/lubosky-stripe/PDF_Download.pdf', target: '_blank', class: 'btn btn-success btn-xs', type: 'button'
+			%footer#receipt-footer
+				%small Your purchase is complete. We hope you enjoy it!
+		.dotmatrix.right
+	#receipt-shadow
