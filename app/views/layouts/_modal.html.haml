@@ -1,0 +1,24 @@
+#author-modal.modal.fade
+	.modal-dialog
+		.modal-content
+			.modal-header
+				%h4.modal-title
+					%span.glyphicon.glyphicon-user>
+					About the Teacher
+			.modal-body.clearfix
+				#modal-left.pull-left
+					%p
+						%strong Mattan Griffel
+					%p
+						Hey, I'm Mattan Griffel, co-founder of the Y Combinator backed
+						= link_to 'One Month', "http://www.onemonth.com", :target => "_blank"
+						where I teach the best selling One Month Rails and One Month Growth Hacking.
+					%p
+						Why take my class? In the past I've advised companies like Pepsico, Bloomberg, GM, NYSE, and JPMorgan on growth hacking best practices. I've also spoken at New York University, Cooper Union and First Round Capital. My goal is to help you and other entrepreneurs rapidly grow your business.
+					%p
+						Follow me on Twitter
+						= link_to '@mattangriffel', "https://twitter.com/mattangriffel", :target => "_blank"
+				#modal-right.pull-right
+					= image_tag('teacher-image.jpg', alt: "Mattan Griffel")
+			.modal-footer
+				%button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
