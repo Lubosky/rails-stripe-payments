@@ -14,6 +14,9 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'figaro', '~> 1.1.1'
 gem 'stripe', '~> 1.25.0'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'devise', '~> 3.5.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
