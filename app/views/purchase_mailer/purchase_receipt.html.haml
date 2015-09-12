@@ -2,4 +2,4 @@
 	
 %p Thank you for stopping by and requesting our PDF. You can now proceed to download.
 
-= link_to 'DOWNLOAD', 'https://s3.amazonaws.com/lubosky-stripe/PDF_Download.pdf'
+= link_to 'DOWNLOAD', "#{@product.download_url}"

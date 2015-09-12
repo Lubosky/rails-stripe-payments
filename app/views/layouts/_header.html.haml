@@ -1,5 +1,5 @@
 %header#content-header
 	#price-container
 		%span.glyphicon.glyphicon-tag
-		%span.price $4.99
-	= image_tag('header-image.jpg', id: "content-header-img", alt: "Learn Growth Hacking")
+		%span.price $#{@product.price}
+	= image_tag('header-image.jpg', id: "content-header-img", alt: "Learn #{@product.title}")

@@ -14,7 +14,7 @@ growth_hacking = Product.create(
 	length: "30 minutes",
 	author_image_name: "teacher-image.jpg", 
 	price: "4.99", sku: "GROHACK1", 
-	download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
+	download_url: "https://s3.amazonaws.com/lubosky-stripe/PDF_Download.pdf", 
 	details: "You'll get one video", 
 	description: %{
 		<p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing hacks and also track their results.</p>

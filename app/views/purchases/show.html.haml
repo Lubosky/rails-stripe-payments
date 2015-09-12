@@ -8,13 +8,15 @@
 			#receipt-details.row.clearfix
 				.col-sm-8.receipt-left
 					%p
-						%strong.font-weight-heavy Growth Hacking
+						%strong.font-weight-heavy 
+							= @product.title
 						%br/
-						%span.font-weight-light Crash Course
+						%span.font-weight-light 
+							= @product.subtitle
 				.col-sm-4
-					$4.99
-			= link_to 'DOWNLOAD', 'https://s3.amazonaws.com/lubosky-stripe/PDF_Download.pdf', target: '_blank', class: 'btn btn-success btn-xs', type: 'button'
+					$#{@product.price}
+			= link_to 'DOWNLOAD', "#{@product.download_url}", target: '_blank', class: 'btn btn-success btn-xs', type: 'button'
 			%footer#receipt-footer
-				%small Your purchase is complete. We hope you enjoy it!
+				%small Your purchase is complete. We hope you'll enjoy it!
 		.dotmatrix.right
 	#receipt-shadow
