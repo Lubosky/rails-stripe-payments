@@ -27,6 +27,7 @@ group :development, :test do
 	gem 'sqlite3'
 	gem 'byebug'
 	gem 'web-console', '~> 2.0'
+	gem 'letter_opener', '~> 1.4.1'
 end
 
 group :production do
