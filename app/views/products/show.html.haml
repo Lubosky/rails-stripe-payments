@@ -2,7 +2,7 @@
 	#price-container
 		%span.glyphicon.glyphicon-tag
 		%span.price $#{@product.price}
-	= image_tag("#{asset_path @product.image_name}", id: "content-header-img", alt: "Learn #{@product.title}")
+	= image_tag("#{asset_path @product.header_image_name}", id: "content-header-img", alt: "Learn #{@product.title}")
 %section#content-details.row.clearfix	
 	%article#details-article.col-sm-8
 		%h1#article-title
