@@ -19,6 +19,7 @@
 			%script{:src => "https://checkout.stripe.com/checkout.js"}
 			= hidden_field_tag 'stripeToken'
 			= hidden_field_tag 'stripeEmail'
+			= hidden_field_tag 'product_id', @product.id
 			= hidden_field_tag 'amount', @product.price_in_cents
 			%button#btn-buy.btn.btn-success.btn-lg.btn-block{:type => "button"}
 				%span.glyphicon.glyphicon-ok>
