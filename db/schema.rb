@@ -51,11 +51,11 @@ ActiveRecord::Schema.define(version: 20150912211001) do
     t.string   "subtitle"
     t.string   "author"
     t.text     "description"
-    t.string   "length"
     t.string   "sku"
     t.decimal  "price"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+    t.string   "length"
     t.text     "author_description"
     t.string   "author_image_name"
     t.string   "details"
