@@ -1,0 +1,7 @@
+.product.clearfix
+	= link_to product do
+		.product-image-container
+			%img{:alt => "Learn #{product.title}", :src => "#{asset_path product.thumbnail_image_name}"}/
+			%span.product-price $#{product.price}
+		%p.product-title 
+			= product.title

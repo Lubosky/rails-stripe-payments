@@ -1,0 +1,7 @@
+%header#content-header
+	= image_tag('header-image.jpg', id: "content-header-img", alt: "Learn with One Month")
+%section#content-details.row.clearfix
+	%article#details-article.col-sm-8
+		%h1#article-title Our Courses
+%section#products
+	= render @products
