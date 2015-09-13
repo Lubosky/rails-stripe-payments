@@ -39,7 +39,7 @@ growth_hacking_monthly = Product.create(
 	author: "Mattan Griffel", 
 	length: "6 months",
 	author_image_name: "teacher-image.jpg", 
-	price: "4.99",
+	price: "9.99",
 	sku: "GROHACK2",
 	download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
 	details: "We'll charge you monthly for unlimited access to our mentoring team",
