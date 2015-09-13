@@ -15,7 +15,7 @@
 							= @product.subtitle
 				.col-sm-4
 					$#{@product.price}
-			= link_to 'DOWNLOAD', "#{@product.download_url}", target: '_blank', class: 'btn btn-success btn-xs', type: 'button'
+			= link_to 'DOWNLOAD', @product.download_url, target: '_blank', class: 'btn btn-success btn-xs', type: 'button'
 			%footer#receipt-footer
 				%small Your purchase is complete. We hope you'll enjoy it!
 		.dotmatrix.right

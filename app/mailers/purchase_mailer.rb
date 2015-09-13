@@ -1,7 +1,6 @@
 class PurchaseMailer < ActionMailer::Base
 	
 	layout 'purchase_mailer'
-
 	default from: "payments@example.com"
 
 	def purchase_receipt purchase
